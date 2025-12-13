@@ -1,6 +1,6 @@
-name: Content removal or credit
+name: Content removal
 description: Request content removal and/or missing credit
-title: "[IMPORTANT]: ""
+title: "[IMPORTANT]: "
 labels: ["removal request", "triage"]
 assignees:
   - justeraseme
