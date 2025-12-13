@@ -29,25 +29,32 @@ function headerHTML() {
       <header>
 
         <div class="header-content">
-	        <div class="header-title">Website Title</div>
+	        <div class="header-title">TANTO AURA</div>
 	        
 	        <!-- NAVIGATION -->
 	        <nav>
 	          <ul>
 	            <li><a href="/">Home</a></li>
-	            <li><a href="/page1">Page 1</a></li>
-	            <li><a href="/page2">Page 2</a></li>
-	            <li><a href="/page3">Page 3</a></li>
+	            <li><a href="./posts">Posts</a></li>
+	            <li><a href="./archive">Archives</a></li>
 	            <li>
-	                <strong>Submenu (hover to show)</strong>
+	                <strong>Wikis</strong>
 	                <ul>
-	                  <li><a href="/page-a">Page A</a></li>
-	                  <li><a href="/page-b">Page B</a></li>
+	                  <li><a href="./wiki">Minecraft Servers</a></li>
+	                  <li><a href="./ocs">Characters</a></li>
+                    <!-- 
 	                  <li><a href="/page-c">Page C</a></li>
 	                  <li><a href="/page-d">Page D</a></li>
 	                  <li><a href="/page-e">Page E</a></li>
+                    -->
 	                </ul>
 	            </li>
+            <li>
+	                <strong>External Links</strong>
+	                <ul>
+	                  <li><a href="https://github.com/justeraseme/website-v6">Source code</a></li>
+	                </ul>
+	          </li>
 	          </ul>
 	        </nav>
         	
@@ -62,7 +69,7 @@ function headerHTML() {
 
       <aside class="left-sidebar">
 	  
-        
+        <!--
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -109,6 +116,7 @@ function headerHTML() {
         	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
           </div>
         </div>
+        -->
       </aside>
 	
 	  
@@ -116,9 +124,18 @@ function headerHTML() {
       <!-- RIGHT SIDEBAR -->
       <!-- =============================================== -->
 
+      
       <aside class="right-sidebar">
+
+      <div class="sidebar-section">
+          <div class="sidebar-title">Buttons</div>
+          <marquee>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+            <a href="https://nomnomnami.com/" target="_blank"><img src="https://nomnomnami.com/images/site_button.gif" alt="nomnomnami"></a>
+          </marquee>
+        </div>
 	  
-        
+        <!--
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -165,6 +182,7 @@ function headerHTML() {
         	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
           </div>
         </div>
+        -->
       </aside>
       `;
 }
@@ -182,7 +200,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+            <div>tantoaura.neocities.org (c) 2025 Tanto Aura. Layout by <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel</a>.
       </footer>`;
 }
 

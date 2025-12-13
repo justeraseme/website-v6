@@ -6,3 +6,4 @@ Please read the [license](LICENSE) and [copying](COPYING) files for more informa
 ## This website uses snippets of code written by...
 - [peachleaf](https://github.com/wintrmoon/)
 - [nomnomnami](https://nomnomnami.com)
+- [petrapixel](https://petrapixel.neocities.org)
