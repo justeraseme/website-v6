@@ -1,0 +1,62 @@
+name: Content removal or credit
+description: Request content removal and/or missing credit
+title: "[IMPORTANT]: ""
+labels: ["removal request", "triage"]
+assignees:
+  - justeraseme
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sorry to have used your content, with or without permission! 
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Is there a way I can contact you if I have further inquiries?
+      placeholder: ex. email@example.com, discord @ player1
+    validations:
+      required: true
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: What kind of request is this?
+      description: Do you want your content removed, or is it just not properly credited?
+      options:
+        - I request that you credit my work that you are using
+        - I request that you change how you use my work to follow my requests
+        - I request that you remove my work from your website
+        - Other (please talk more below)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: What was used?
+      description: Please use this section to explain everything that needs to be know, including where your content was used (down to the file is best), why you don't want it to be used, etc. The more details, the better!
+      placeholder: You used my work in this section of your website and I want it removed because...
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: More context
+      description: Clarify any further context here.
+      placeholder: The code used can originally be found here, etc...
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Required checkboxes
+      description: By submitting this issue, you agree that you are the original author of the featured content and/or authorized on the behalf of the original content creator, and have the ability to provide proof that you are the author, including written consent and/or any additional questions provided, if necessary.
+      options:
+        - label: I agree to be respectful when resolving this request
+          required: false
+        - label: I am the original creator of the featured content and/or are not submitting this on their behalf
+          required: false
+        - label: I have written consent and/or other proof that I am authorized to submit this request as/on the behalf of the original creator
+          required: false
+        - label: I was not truthful to the above checkboxes
+          required: false
