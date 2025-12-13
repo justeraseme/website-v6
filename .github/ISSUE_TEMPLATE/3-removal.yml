@@ -36,7 +36,7 @@ body:
       label: What was used?
       description: Please use this section to explain everything that needs to be know, including where your content was used (down to the file is best), why you don't want it to be used, etc. The more details, the better!
       placeholder: You used my work in this section of your website and I want it removed because...
-      value: "A bug happened!"
+      value: "I own the code used at `https://example.com/file.html`, and request that you [enter details]. I want these changes made because [enter details]"
     validations:
       required: true
   - type: textarea
