@@ -37,7 +37,7 @@ body:
     id: device
     attributes:
       label: What device are you on?
-      multiple: true
+      multiple: false
       options:
         - Desktop device (Windows, Mac OS & Linux)
         - Small mobile device (phone, small console)
@@ -46,7 +46,7 @@ body:
         - Legacy device
         - Not listed here
     validations:
-      required: true
+      required: false
   - type: textarea
     id: logs
     attributes:
