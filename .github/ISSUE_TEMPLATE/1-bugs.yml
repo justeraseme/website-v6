@@ -48,11 +48,10 @@ body:
     validations:
       required: false
   - type: textarea
-    id: logs
+    id: more
     attributes:
       label: More context
       description: Please provide more context.
-      render: shell
     validations:
       required: true
   - type: checkboxes
