@@ -1,0 +1,59 @@
+/* load fonts */
+@font-face {
+  font-family: Nunito;
+  src: url('./fonts/Nunito-Black.ttf');
+  font-weight: bold;
+}
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url('./fonts/AtkinsonHyperlegible-Regular.ttf');
+}
+
+@font-face {
+    font-family: Atkinson Hyperlegible;
+    src: url('./fonts/AtkinsonHyperlegible-Bold.ttf');
+    font-weight: bold;
+}
+
+/* main page styles */
+body {
+    /* below is provided by better motherfucking website */
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0 10px;
+
+    /* now i do my own. based on catppuccin mocha */
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Atkinson Hyperlegible', Verdana, Tahoma, sans-serif /* override default font */
+}
+
+/* style dividers */
+hr { 
+    width: 650px;
+    border: 1px solid gray; /* border styling */
+}
+
+h1,h2,h3 { line-height: 1.2 } /* provided by better motherfucking website */
+
+/* unvisited */
+a:link {
+    color: #bac2de; /* Example: Sets unvisited links to blue */
+}
+
+/* visited */
+a:visited {
+    color: #a6adc8; /* Example: Sets visited links to purple */
+}
+
+/* hovering */
+a:hover {
+      color: #f5e0dc; /* Example: Sets hover color to red */
+}
+
+/* active */
+a:active {
+      color: #cba6f7; /* Example: Sets active color to green */
+    }

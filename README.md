@@ -1,2 +1,8 @@
 # website-v6
-What an original websiter!
+The sixth major revision of my NeoCities website.
+
+Please read the [license](LICENSE) and [copying](COPYING) files for more information.
+
+## This website uses snippets of code written by...
+- [peachleaf](https://github.com/wintrmoon/)
+- [nomnomnami](https://nomnomnami.com)
