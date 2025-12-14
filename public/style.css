@@ -23,11 +23,11 @@
   --font-size: 16px;
 
   /* Other Settings: */
-  --margin: 10px;
-  --padding: 15px;
+  --margin: 4px;
+  --padding: 10px;
   --border: none;
-  --round-borders: 0px;
-  --sidebar-width: 160px;
+  --round-borders: 4px;
+  --sidebar-width: 180px;
 }
 
 /* -------------------------------------------------------- */
@@ -87,7 +87,7 @@ a:focus {
 /* -------------------------------------------------------- */
 
 .layout {
-  width: 1200px;
+  width: 1300px;
   display: grid;
   grid-gap: var(--margin);
   grid-template: "header header header" auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto var(--sidebar-width);

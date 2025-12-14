@@ -68,20 +68,21 @@ function headerHTML() {
       <!-- =============================================== -->
 
       <aside class="left-sidebar">
+
+      <div class="sidebar-section">
+          <div class="sidebar-title">Changelog</div>
+          <p>12/14/25</p>
+          <blockquote>
+            <p>* Overhauls to the content warning page</p>
+            <p>* Pretty CSS Adjustments</p>
+          </blockquote>
+        </div>
 	  
         <!--
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-          </blockquote>
         </div>
         
         <div class="sidebar-section">
@@ -134,14 +135,13 @@ function headerHTML() {
             <a href="https://nomnomnami.com/" target="_blank"><img src="https://nomnomnami.com/images/site_button.gif" alt="nomnomnami"></a>
           </marquee>
         </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Webrings</div>
+          <p>:(</p>
+        </div>
 	  
         <!--
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
-        </div>
-        
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <blockquote>
