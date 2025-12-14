@@ -37,19 +37,8 @@ function headerHTML() {
 	            <li><a href="/">Home</a></li>
 	            <li><a href="./posts">Posts</a></li>
 	            <li><a href="./archive">Archives</a></li>
-	            <li>
-	                <strong>Wikis</strong>
-	                <ul>
-	                  <li><a href="./wiki">Minecraft Servers</a></li>
-	                  <li><a href="./ocs">Characters</a></li>
-                    <!-- 
-	                  <li><a href="/page-c">Page C</a></li>
-	                  <li><a href="/page-d">Page D</a></li>
-	                  <li><a href="/page-e">Page E</a></li>
-                    -->
-	                </ul>
-	            </li>
-            <li>
+              <li><a href="./wiki/index.html">Wikis</a></li>
+              <li>
 	                <strong>External Links</strong>
 	                <ul>
 	                  <li><a href="https://github.com/justeraseme/website-v6">Source code</a></li>
