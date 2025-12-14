@@ -1,585 +1,380 @@
-
-  
-/* -------------------------------------------------------- */
-/* VARIABLES */
-/* -------------------------------------------------------- */
-
-/* Variables are used like this: var(--text-color) */
 :root {
-  /* Background Colors: */
-  --background-color: #11111b;
-  --content-background-color: #1e1e2e;
-  --sidebar-background-color: #313244;
-
-  /* Text Colors: */
-  --text-color: #cdd6f4;
-  --sidebar-text-color: #bac2de;
-  --link-color: #a6e3a1;
-  --link-color-hover: #94e2d5;
-
-  /* Text: */
-  --font: Lucida Console, monospace;
-  --heading-font: Monaco, monospace;
-  --font-size: 16px;
-
-  /* Other Settings: */
-  --margin: 10px;
-  --padding: 15px;
-  --border: none;
-  --round-borders: 0px;
-  --sidebar-width: 160px;
-}
-
-/* -------------------------------------------------------- */
-/* BASICS */
-/* -------------------------------------------------------- */
-
-* {
-  box-sizing: border-box;
+  /*change these colors to suit your site's aesthetic!*/
+  --text-color: #373540;
+  --main-bg-color: white;
+  /*background for the top header and page footer*/
+  --banner-color: #362a6f;
+  --banner-text-color: white;
+  /*for the main border around main and the bio table*/
+  --border-color: #ff86de;
+  /*for h4 headings*/
+  --subsection-border-color: #8E8D98;
+  --comment-border-color: #D0D0DB;
+  /*used in various places for more than just headings... sorry lol*/
+  --heading-color: #D0D0DB;
+  --link-color: #6997ff;
+  /*an alternate link color used in various places*/
+  --subtle: #707E99;
+  /*for the spoiler tag in the gallery*/
+  --tag-color: #e5e5ed;
+  /*hovering the spoiler tag, and the bg for "spoiler"-class blocks*/
+  --highlight: #fff9e7;
+  /*bio table colors*/
+  --th-color: #4D4B57;
+  --td-odd-color: #D0D0DB;
+  --td-even-color: #eeeef3;
+  
+  /*nice pastels for your convenience*/
+  --red: #ffb9c9;
+  --orange: #ffc6a8;
+  --gold: #ffe7b9;
+  --green: #b5fcaf;
+  --blue: #afeaff;
+  --purple: #cac5ff;
+  --pink: #ffceec;
 }
 
 body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  min-height: 100vh;
-  font-size: var(--font-size);
+  /*change the page font here*/
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
   margin: 0;
-  padding: var(--margin);
   color: var(--text-color);
-  font-family: var(--font);
-  line-height: 1.2;
-  background: var(--background-color);
-  background-image: url("");
-  
-}
+  }
 
-::selection {
-  /* (Text highlighted by the user) */
-  background: rgba(0, 0, 0, 0.2);
-}
+/*some quality-of-life styles*/
+html {scroll-behavior: smooth;}
+details > summary {cursor: pointer;}
+* {box-sizing: border-box;}
 
-mark {
-  /* Text highlighted by using the <mark> element */
-  text-shadow: 1px 1px 4px var(--link-color);
-  background-color: inherit;
-  color: var(--text-color);
-}
+/*highlighted text styles*/
+::selection {background:#bde0ff;
+  color: #5e53b2;}
 
-/* Links: */
-a {
-  text-decoration: underline;
-}
-
-a,
-a:visited {
+/*links*/
+main a {color: var(--link-color);}
+main a:visited {color: var(--subtle);}
+main a:hover {color: var(--link-color);}
+a:hover {
   color: var(--link-color);
-}
-
-a:hover,
-a:focus {
-  color: var(--link-color-hover);
   text-decoration: none;
 }
-
-/* -------------------------------------------------------- */
-/* LAYOUT */
-/* -------------------------------------------------------- */
-
-.layout {
-  width: 1200px;
-  display: grid;
-  grid-gap: var(--margin);
-  grid-template: "header header header" auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto var(--sidebar-width);
-  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+header, footer {
+  background: var(--banner-color);
+  color: var(--banner-text-color);
 }
+header h1 {
+  margin: 0;
+  padding: 12px 24px;
+  /*making the max width match <main>*/
+  max-width: 900px;
+  /*uncomment this line if you want to center your top header*/
+  /*text-align: center;*/
+}
+header a {
+  text-decoration: none;
+  color: var(--banner-text-color);
+}
+header a:visited, 
+header a:hover {color: var(--banner-text-color);}
 
 main {
-  grid-area: main;
-  overflow-y: auto;
-  padding: var(--padding);
-  background: var(--content-background-color);
-  border: var(--border);
-  border-radius: var(--round-borders);
+  width: 900px;
+  max-width: 100%;
+  background: var(--main-bg-color);
+  border: 3px solid var(--border-color);
+  border-radius: .25em;
+  margin: 20px auto;
+  padding: 12px 48px;
 }
+/*some spacing for list elements*/
+li {margin-bottom: 4px;}
 
-/* -------------------------------------------------------- */
-/* HEADER */
-/* -------------------------------------------------------- */
-
-header {
-  grid-area: header;
-  font-size: 1.2em;
-  border: var(--border);
-  border-radius: var(--round-borders);
-  background: var(--content-background-color);
-}
-
-.header-content {
-  padding: var(--padding);
-}
-
-.header-title {
-  font-family: var(--heading-font);
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.header-image img {
-  width: 100%;
-  height: auto;
-}
-
-/* -------------------------------------------------------- */
-/* SIDEBARS */
-/* -------------------------------------------------------- */
-
-aside {
-  grid-area: aside;
-  border: var(--border);
-  border-radius: var(--round-borders);
-  overflow: hidden;
-  background: var(--sidebar-background-color);
-  padding: var(--padding);
-  color: var(--sidebar-text-color);
-}
-
-.left-sidebar {
-  grid-area: leftSidebar;
-}
-
-.right-sidebar {
-  grid-area: rightSidebar;
-}
-
-.sidebar-title {
-  font-weight: bold;
-  font-size: 1.2em;
-  font-family: var(--heading-font);
-}
-
-.sidebar-section:not(:last-child) {
-  margin-bottom: 3em;
-}
-
-.sidebar-section ul,
-.sidebar-section ol {
-  padding-left: 1.5em;
-}
-
-.sidebar-section > *:not(p):not(ul):not(ol):not(blockquote) {
-  margin-top: 10px;
-}
-
-/* Sidebar Blockquote: */
-
-.sidebar-section blockquote {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 1em 0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.sidebar-section blockquote > *:first-child {
-  margin-top: 0;
-}
-
-.sidebar-section blockquote > *:last-child {
-  margin-bottom: 0;
-}
-
-/* Site Button: */
-
-.site-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.site-button textarea {
-  font-family: monospace;
-  font-size: 0.7em;
-}
-
-/* -------------------------------------------------------- */
-/* FOOTER */
-/* -------------------------------------------------------- */
-
-footer {
-  grid-area: footer;
-  border: var(--border);
-  border-radius: var(--round-borders);
-  overflow: hidden;
-  font-size: 0.75em;
-  padding: 15px;
-  background: var(--content-background-color);
-  display: flex;
-  justify-content: center;
-}
-
-footer a,
-footer a:visited {
-  color: var(--link-color);
-}
-
-footer a:hover,
-footer a:focus {
-  color: var(--link-color-hover);
-}
-
-/* -------------------------------------------------------- */
-/* NAVIGATION */
-/* -------------------------------------------------------- */
-
-nav {
-  margin-bottom: 3em;
-}
-
-nav .sidebar-title {
-  margin-bottom: 0.5em;
-}
-
-nav ul {
-  margin: 0 -5px;
-  padding: 0;
-  list-style: none;
-  user-select: none;
-}
-
-nav ul li {
-  margin-bottom: 0;
-}
-
-nav > ul li > a,
-nav > ul li > strong {
+/*for the 32x32 character icon*/
+.icon {
+  height: 32px;
+  width: 32px;
+  border-radius: .2em;
   display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 8px;
+  /*remove this if you're not using pixel art*/
+  image-rendering: pixelated;
+}
+/*the page heading at the top of main*/
+.character-name {
+  background-color: var(--heading-color);
+  padding: .5em;
+  font-size: 24px;
 }
 
-nav > ul li > a,
-nav > ul li > details summary,
-nav > ul li > strong {
-  padding: 5px 10px;
+/*all the section headings*/
+main h2,
+main h3 {
+  background-color: var(--heading-color);
+  padding: .4em .5em;
+}
+/*and subsections*/
+main h4 {border-bottom: 2px dashed var(--subsection-border-color);}
+
+/*detailed list elements (for listing other characters under "relationships"*/
+dt {font-weight: bold;}
+dd {margin-bottom: 8px;}
+
+/*make sure images don't go out of our container*/
+main img,
+/*might as well limit the portrait image too actually*/
+.bio img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
-nav > ul li > a.active,
-nav > ul li > details.active summary {
+/*character bio floats to the right!*/
+.bio {
+  float: right;
+  border: 2px solid var(--border-color);
+  margin-left: 16px;
+  max-width: 280px;
+  /*bg color isnt shown unless your portrait image is transparent*/
+  background: white;
+}
+/*clearfix, if you don't know what that means don't worry about it*/
+.bio::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*for the table, overflow makes it scrollable in case you write a lot*/
+.bio table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+.bio th,
+.bio td {
+  padding: 0.4em;
+  /*uhhhh i think i added this in case you write multi-line answers*/
+  vertical-align: top;
+}
+/*i didn't use table headings, but you might!*/
+.bio th {
+  background: var(--th-color);
+  color: white;
+}
+.bio td {
+  font-size: small;
+  /*if your entries get cut off, itll show the text with a "..." at the end*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bio td:first-of-type {
+  font-weight: bold;
+  /*can change this to be 50% if you want the columns to be even*/
+  width: 35%;
+}
+/*alternate the colors~*/
+.bio tr:nth-child(odd) {background: var(--td-odd-color);}
+.bio tr:nth-child(even) {background: var(--td-even-color);}
+
+/*this is shown in the info section, but you don't have to use it*/
+.quote {
+  border-left: 6px solid var(--heading-color);
+  padding: .5em 1em;
+  font-style: italic;
+}
+
+/*for the spoiler <details> elements to hide story sections*/
+.spoilers {
+  background: var(--highlight);
+  border: dashed 2px #ea426d80;
+  margin: .5em 2px;
+  padding: .5em;
+}
+.spoilers summary {
+  color: #ea426d;
   font-weight: bold;
 }
 
-nav ul summary {
-  cursor: pointer;
+/*tabbed gallery pages tutorial*/
+/*https://css-tricks.com/pure-css-tabs-with-details-grid-and-subgrid/*/
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--pages), minmax(150px, 1fr));
+  grid-template-rows: auto 1fr;
+  column-gap: 1rem;
 }
 
-nav ul ul li > a {
-  padding-left: 30px;
+.gallery-page {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 3;
 }
-
-/* NAVIGATION IN HEADER */
-
-header nav {
-  margin-bottom: 0;
+.gallery-page::details-content {
+  grid-row: 2; /* position in the second row */
+  grid-column: 1 / -1; /* cover all three columns */
+  padding: 1rem;
 }
+.gallery-page:not([open])::details-content {display: none;}
 
-header nav ul {
+.gallery-page > summary {
+  grid-column: var(--n) / span 1;
+  grid-row: 1; /* position in the first row */
+  display: grid;
+  padding: .5rem;
+  border: 2px solid var(--heading-color);
+  text-align: center;
+  /*uncomment to add animation*/
+  /*transition: .2s all;*/
+}
+.gallery-page[open] > summary {
+  background: var(--tag-color);
+  font-weight: bold;
+}
+.gallery-page > summary:hover {
+  background: var(--highlight);
+  border: 2px solid var(--subtle);
+  /*uncomment to add animation*/
+  /*transition: .2s all;*/
+}
+/*these make sure you can click everything inside all pages*/
+.gallery-page a,
+.gallery-page details,
+.gallery-page summary {z-index: 1;}
+
+/*for the image buttons*/
+/*we want them to be inside a flex grid so they display nicely*/
+.img-gallery {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  justify-content: center;
 }
-
-header nav ul li {
-  position: relative;
+/*individual button styles*/
+.img-gallery details > summary,
+.img-gallery figure {
+  margin: 10px;
+  max-width: 200px;
+  border: 2px solid var(--border-color);
+  background: white;
 }
-
-header nav ul li:first-child > a {
-  padding-left: 0;
+.img-gallery details > summary:hover,
+.img-gallery figure:hover {
+  border: 2px solid var(--link-color);
 }
-
-header nav ul li:last-child > a {
-  padding-right: 0;
+/*limit the size on these things*/
+.img-gallery img {
+  max-height: 200px;
+  max-width: 196px;
 }
-
-/* Subnavigation (Drop-Down): */
-
-header nav ul ul {
-  background: var(--content-background-color);
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 10px;
-  padding: 0.5em;
-  z-index: 1;
-  border: var(--border);
-  min-width: 100%;
-  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
-}
-
-header nav ul li:hover ul,
-header nav ul li:focus-within ul {
-  display: block;
-}
-
-header nav ul li strong {
-  color: var(--link-color);
-  text-decoration: underline;
-  font-weight: normal;
-}
-
-header nav ul ul li a {
-  display: block;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* -------------------------------------------------------- */
-/* CONTENT */
-/* -------------------------------------------------------- */
-
-main {
-  line-height: 1.5;
-}
-
-main a,
-main a:visited {
-  color: var(--link-color);
-}
-
-main a:hover,
-main a:focus {
-  color: var(--link-color-hover);
-  text-decoration-style: wavy;
-}
-
-main p,
-main .image,
-main .full-width-image,
-main .two-columns {
-  margin: 0.75em 0;
-}
-
-main ol,
-main ul {
-  margin: 0.5em 0;
-  padding-left: 1.5em;
-}
-
-main ol li,
-main ul li {
-  margin-bottom: 0.2em;
-  line-height: 1.3;
-}
-
-main ol {
-  padding-left: 2em;
-}
-
-main blockquote {
-  background: rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  margin: 1em 0;
-  border-radius: 10px;
-}
-
-main pre {
-  margin: 1em 0 1.5em;
-}
-
-main code {
-  text-transform: none;
-}
-
-main center {
-  margin: 1em 0;
-  padding: 0 1em;
-}
-
-main hr {
-  border: 0;
-  border-top: var(--border);
-  margin: 1.5em 0;
-}
-
-/* HEADINGS: */
-
-main h1,
-main h2,
-main h3,
-main h4,
-main h5,
-main h6 {
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-main h1:first-child,
-main h2:first-child,
-main h3:first-child,
-main h4:first-child,
-main h5:first-child,
-main h6:first-child {
-  margin-top: 0;
-}
-
-main h1 {
-  font-size: 1.5em;
-}
-
-main h2 {
-  font-size: 1.4em;
-}
-
-main h3 {
-  font-size: 1.3em;
-}
-
-main h4 {
-  font-size: 1.2em;
-}
-
-main h5 {
-  font-size: 1.1em;
-}
-
-main h6 {
-  font-size: 1em;
-}
-
-/* COLUMNS: */
-
-.two-columns {
-  display: flex;
-}
-
-.two-columns > * {
-  flex: 1 1 0;
-  margin: 0;
-}
-
-.two-columns > *:first-child {
-  padding-right: 0.75em;
-}
-
-.two-columns > *:last-child {
-  padding-left: 0.75em;
-}
-
-/* -------------------------------------------------------- */
-/* CONTENT IMAGES */
-/* -------------------------------------------------------- */
-
-.image {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
-
-.full-width-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.images {
-  display: flex;
-  width: calc(100% + 5px + 5px);
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-.images img {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  margin: 0;
-  overflow: hidden;
-}
-
-/* -------------------------------------------------------- */
-/* ACCESSIBILITY */
-/* -------------------------------------------------------- */
-
-/* please do not remove this. */
-
-#skip-to-content-link {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  padding: 0.375rem 0.75rem;
-  line-height: 1;
-  font-size: 1.25rem;
-  background-color: var(--content-background-color);
+/*and the caption style*/
+.img-gallery figcaption {
+  font-size: small;
+  text-align: center;
+  margin: auto;
+  padding: 4px 20px;
+  background: var(--heading-color);
   color: var(--text-color);
-  transform: translateY(-3rem);
-  transition: transform 0.1s ease-in;
-  z-index: 99999999999;
+}
+/*the whole element is wrapped in a link to view the full image, but we don't want to style the text like one*/
+.img-gallery a {text-decoration: none;}
+.img-gallery details > summary {
+  background: var(--heading-color);
+  padding: 40px;
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+}
+/*hide the spoiler tag once it's clicked*/
+.img-gallery details[open] > summary {display:none;}
+
+/*fake comments section!!!!*/
+.comment {
+  border: 2px solid var(--comment-border-color);
+  border-radius: .3em;
+  padding: .5em 1em;
+  margin-bottom: 10px;
+}
+/*indent replies to differentiate them from the original comment*/
+.reply {margin-left: 20px;}
+/*for the "view replies" button*/
+.reply summary {
+  text-decoration: underline;
+  list-style-type: none;
+  color: var(--subtle);
+}
+/*make it act like a link/button*/
+.reply summary:hover {
+  color: var(--subtle);
+  text-decoration: none;
+}
+/*hide the "view replies" text after it's clicked*/
+.reply[open] summary {display:none;}
+
+/*username styles*/
+.user {font-weight:bold;}
+.user small {font-weight: normal; margin-left: 8px;}
+
+/*this is an easy way to replace the background colors on the headings, i just use the color classes like this*/
+.red {background: var(--red)!important;}
+.orange {background: var(--orange)!important;}
+.gold {background: var(--gold)!important;}
+.green {background:  var(--green)!important;}
+.blue {background:  var(--blue)!important;}
+.purple {background:  var(--purple)!important;}
+.pink {background: var(--pink)!important;}
+/*!important means it will take priority over whatever existing color there is*/
+
+/*nav is at the bottom of the page as a list of links...*/
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+/*link colors*/
+nav a {color: var(--subtle);}
+nav a:hover {color: var(--subtle);}
+
+nav li {padding-left: 4px;}
+/*remove this if you don't want the slashes between list items*/
+nav li:after {content: " /"}
+
+/*i wanted the footer to be locked to the bottom of the page, even if your page is really short... it covers up a small section of the screen, so i changed it to 50% opacity for that reason*/
+footer {
+  width: 100%;
+  /*these two styles lock it in place*/
+  position: fixed;
+  bottom: 0;
+  /*and the rest is whatever you want*/
+  font-size: 12px;
+  opacity: 50%;
+  padding: 6px;
+  text-align: center;
+  /*make sure it shows over the gallery elements that had their z-index raised*/
+  z-index: 2;
 }
 
-#skip-to-content-link:focus,
-#skip-to-content-link:focus-within {
-  transform: translateY(0);
-}
-
-/* -------------------------------------------------------- */
-/* MOBILE RESPONSIVE */
-/* -------------------------------------------------------- */
-
-/* CSS Code for devices < 800px */
-@media (max-width: 800px) {
-  body {
-    font-size: 14px;
-  }
-
-  .layout {
-    width: 100%;
-    grid-template: "header" auto  "main" auto "footer" auto / 1fr;
-    /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
-  }
-
-  .left-sidebar { 
-    display: none;
-  }
-  .right-sidebar { 
-    display: none;
-  }
-
-  aside {
-    border-bottom: 1px solid;
-    padding: 9px;
-    font-size: 0.9em;
-  }
-
-  
-  nav {
-    padding: 0;
-  }
-
-  nav > ul {
-    padding-top: 0.5em;
-  }
-
-  nav > ul li > a,
-  nav > ul li > details summary,
-  nav > ul li > strong {
-    padding: 0.5em;
-  }
-
+/*now to make the page responsive!*/
+@media only screen and (max-width: 800px) {
+  /*i think this one was for if your header text was kinda long...*/
+  h1 {font-size: 24px; padding-inline: 12px;}
   main {
-    max-height: none;
-    padding: 15px;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    padding-inline: 1.5em;
   }
-
-  .images {
-    flex-wrap: wrap;
+  /*center the bio, there's no room to have it float*/
+  .bio {
+    float:none;
+    max-width: 100%;
+    width: 280px;
+    margin: 0 auto;
   }
-
-  .images img {
-    width: 100%;
-  }
-
-  #skip-to-content-link {
-    font-size: 1rem;
-  }
+  /*change the max size of grid items so they still get laid out nicely*/
+  .gallery-grid {grid-template-columns: repeat(var(--pages), minmax(60px, 1fr));}
 }
