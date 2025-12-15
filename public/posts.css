@@ -17,7 +17,7 @@
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.15s ease;
-        z-index: 10;
+        z-index: 3;
 }
 
 em { font-style: normal; } /* don't weird out em elements */
@@ -139,7 +139,7 @@ main {
   /*the sidebar doesn't scroll with the rest of the page*/
   position: fixed;
   /*this stacks it on top of everything else*/
-  z-index: 99;
+  z-index: 1;
   /*make sure it takes up the whole screen vertically*/
   height: 100%;
   /*and add a scrollbar if someone's window is too short to see all the content*/
@@ -410,7 +410,7 @@ footer {
   color: var(--post-text);
   background: var(--border-color);
   /*in the html the footer is at the very end, but when looking at the site you see it at the bottom of the sidebar!*/
-  z-index: 100;
+  z-index: 2;
   position: fixed;
   /*make it the same length/positioning as the sidebar*/
   margin-left:22px;
