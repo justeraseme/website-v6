@@ -514,7 +514,7 @@ main h6 {
   color: var(--text-color);
   transform: translateY(-3rem);
   transition: transform 0.1s ease-in;
-  z-index: 99999999999;
+  z-index: 2;
 }
 
 #skip-to-content-link:focus,
