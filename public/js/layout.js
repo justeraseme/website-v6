@@ -151,18 +151,18 @@ function headerHTML() {
       <div class="sidebar-section">
           <div class="sidebar-title">Take my button!</div>
           <div class="site-button">
-          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button2.png" alt="TA - TANTO AURA!"></a>
-        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button2.png" alt="TA - TANTO AURA!"></a></textarea>
+          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TA - TANTO AURA!"></a>
+        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TA - TANTO AURA!"></a></textarea>
           </div>
         </div>
 
       <div class="sidebar-section">
           <div class="sidebar-title">Buttons</div>
           <marquee>
-          <a href="https://neocities.org" target="_blank"><img src="./img/neocities.gif" alt="neocities. you're here!"></a>
+          <a href="https://neocities.org" target="_blank"><img src="./img/button/neocities.gif" alt="neocities. you're here!"></a>
           	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
             <a href="https://nomnomnami.com/" target="_blank"><img src="./img/nami.gif" alt="nomnomnami"></a>
-            <a href="https://peachleaf.neocities.org.com/" target="_blank"><img src="./img/peachleaf.gif"></a>
+            <a href="https://peachleaf.neocities.org.com/" target="_blank"><img src="../img/button/peachleaf.gif"></a>
           </marquee>
         </div>
 
