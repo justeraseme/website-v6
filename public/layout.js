@@ -192,7 +192,7 @@ function footerHTML() {
       <!-- =============================================== -->
 
       <footer>
-            <div>tantoaura.neocities.org (c) 2025 Tanto Aura. Layout by <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel</a>.
+            <div>TANTO AURA! website (c) 2025 Tanto Aura, licensed under BSD-3-Clause. Layout by <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel</a>.
       </footer>`;
 }
 
