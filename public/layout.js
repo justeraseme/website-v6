@@ -34,7 +34,7 @@ function headerHTML() {
 	        <!-- NAVIGATION -->
 	        <nav>
 	          <ul>
-	            <li><a href="/>"Home</a></li>
+	            <li><a href="/">Home</a></li>
               <li><a href="./music.html" data-tooltip="I work on music! Download a few before you go!">Music</a></li>
 	            <li><a href="./posts" data-tooltip="Like twitter, but less toxic.">Posts</a></li>
               <li><a href="./wiki/index.html" data-tooltip="Ever wanna learn?">Wikis</a></li>
