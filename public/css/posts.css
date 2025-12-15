@@ -354,7 +354,7 @@ also no starting with numbers, but maybe don't use numbers anyway */
 .tagged:has(#rant:checked) article[class~="rant"],
 .tagged:has(#updates:checked) article[class~="updates"],
 .tagged:has(#yap:checked) article[class~="yap"],
-.tagged:has(#onit:checked) article[class~="onit"] {display: inline-block;}
+.tagged:has(#demos:checked) article[class~="demos"] {display: inline-block;}
 
 /*tag filter button styles (there's a lot)*/
 #tag-filters label {
