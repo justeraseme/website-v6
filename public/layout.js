@@ -120,8 +120,10 @@ function headerHTML() {
       <div class="sidebar-section">
           <div class="sidebar-title">Buttons</div>
           <marquee>
+          <a href="https://neocities.org" target="_blank"><img src="./img/neocities.gif" alt="neocities. you're here!"></a>
           	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-            <a href="https://nomnomnami.com/" target="_blank"><img src="https://nomnomnami.com/images/site_button.gif" alt="nomnomnami"></a>
+            <a href="https://nomnomnami.com/" target="_blank"><img src="./img/nami.gif" alt="nomnomnami"></a>
+            <a href="https://peachleaf.neocities.org.com/" target="_blank"><img src="./img/peachleaf.gif"></a>
           </marquee>
         </div>
 
