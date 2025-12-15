@@ -90,11 +90,10 @@ function headerHTML() {
 
       <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
-          <p>12/14/25</p>
+          <p>12/15/25</p>
           <blockquote>
-            <p>* Overhauls to the content warning page</p>
-            <p>* Pretty CSS Adjustments</p>
-            <p>* New button!</p>
+            <p>* There is now a dedicated page where you can download music I've made!</p>
+            <p>* Now using peachleaf's tooltips script rather than title properties</p>
           </blockquote>
         </div>
 	  
