@@ -34,10 +34,10 @@ function headerHTML() {
 	        <!-- NAVIGATION -->
 	        <nav>
 	          <ul>
-	            <li><a href="/">Home</a></li>
-	            <li><a href="./posts">Posts</a></li>
-              <li><a href="./wiki/index.html">Wikis</a></li>
-              <li><a href="./archive">Archives</a></li>
+	            <li><a href="/"Home</a></li>
+	            <li><a href="./posts" data-tooltip="Like twitter, but less toxic.">Posts</a></li>
+              <li><a href="./wiki/index.html" data-tooltip="Ever wanna learn?">Wikis</a></li>
+              <li><a href="./archive" data-tooltip="Old versions... Very scary!">Archives</a></li>
               <li>
 	                <strong>External Links</strong>
 	                <ul>
