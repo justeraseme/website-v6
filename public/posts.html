@@ -8,8 +8,10 @@
     <link rel="icon" href="./img/treatpx.png">
     <link href="./posts.css" rel="stylesheet" type="text/css" media="all">
     <script src="./timestamps.js" defer></script>
+    <script src="./tooltips.js" async></script>
   </head>
   <body>
+    <div id="tooltip" class="tooltip"></div> <!-- hello tooltips -->
     <div id="container">
 
     <aside id="sidebar">
@@ -39,8 +41,8 @@
         <nav><ul>
             <li><a href="/homepage.html">Back</a></li>
             <!-- <li><a href="./terminal.html">Terminal</a></li> -->
-            <li><a href="./archive">Archive</a></li>
-            <li><a href="https://github.com/justeraseme/website-v6">Source</a></li>
+            <li><a href="./archive" data-tooltip="Browse old versions!">Archive</a></li>
+            <li><a href="https://github.com/justeraseme/website-v6" data-tooltip="See something that should be fixed?">Source</a></li>
             <!-- other places idk -->
         </ul></nav>
     </aside>
