@@ -6,7 +6,7 @@
 
 /* magic */
 .tooltip {
-        background: #1E1E2E; /* use different stylizing because this isn't wintr's site */
+        background: #6c7086; /* use different stylizing because this isn't wintr's site */
         color: #cdd6f4; /* use different stylizing because this isn't wintr's site */
         /* rest is specified as per wintr's documentation and should NOT be changed */
         position: fixed;
