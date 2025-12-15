@@ -116,16 +116,6 @@ function headerHTML() {
         
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          </marquee>
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
           <img class="full-width-image" src="https://picsum.photos/id/106/1000/400">
         </div>
         
@@ -160,7 +150,7 @@ function headerHTML() {
           <marquee>
           <a href="https://neocities.org" target="_blank"><img src="./img/button/neocities.gif" alt="neocities. you're here!"></a>
           	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-            <a href="https://nomnomnami.com/" target="_blank"><img src="./img/nami.gif" alt="nomnomnami"></a>
+            <a href="https://nomnomnami.com/" target="_blank"><img src="./img/button/nami.gif" alt="nomnomnami"></a>
             <a href="https://peachleaf.neocities.org.com/" target="_blank"><img src="../img/button/peachleaf.gif"></a>
           </marquee>
         </div>
