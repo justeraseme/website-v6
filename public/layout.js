@@ -64,6 +64,7 @@ function headerHTML() {
           <blockquote>
             <p>* Overhauls to the content warning page</p>
             <p>* Pretty CSS Adjustments</p>
+            <p>* New button!</p>
           </blockquote>
         </div>
 	  
@@ -118,6 +119,14 @@ function headerHTML() {
       <aside class="right-sidebar">
 
       <div class="sidebar-section">
+          <div class="sidebar-title">Take my button!</div>
+          <div class="site-button">
+          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button2.png" alt="TA - TANTO AURA!"></a>
+        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button2.png" alt="TA - TANTO AURA!"></a></textarea>
+          </div>
+        </div>
+
+      <div class="sidebar-section">
           <div class="sidebar-title">Buttons</div>
           <marquee>
           <a href="https://neocities.org" target="_blank"><img src="./img/neocities.gif" alt="neocities. you're here!"></a>
@@ -164,14 +173,6 @@ function headerHTML() {
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <img class="full-width-image" src="https://picsum.photos/id/106/1000/400">
-        </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <div class="site-button">
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        	<textarea><a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></textarea>
-          </div>
         </div>
         -->
       </aside>
