@@ -17,8 +17,10 @@
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.15s ease;
-        z-index: 3;
+        z-index: 5;
 }
+
+.tooltip.visible { opacity: 1; } /* make tooltips appear only when hovered, i think */
 
 em { font-style: normal; } /* don't weird out em elements */
 handle { color: #a6adc8; } /* color handles diff from the display */
