@@ -1,5 +1,5 @@
 # website-v6
-The sixth major revision of my NeoCities website.
+The sixth major revision of my NeoCities website, based on Catppuccin's "Mocha" color scheme. Music, blogging, world building, and just silly shenanigans in general.
 
 ## This website uses snippets of code written by...
 - [nomnomnami](https://nomnomnami.com/templates/) - Various templates ("Pastille", "Thyme")
