@@ -36,8 +36,8 @@ function headerHTML() {
 	          <ul>
 	            <li><a href="/">Home</a></li>
 	            <li><a href="./posts">Posts</a></li>
-	            <li><a href="./archive">Archives</a></li>
               <li><a href="./wiki/index.html">Wikis</a></li>
+              <li><a href="./archive">Archives</a></li>
               <li>
 	                <strong>External Links</strong>
 	                <ul>
