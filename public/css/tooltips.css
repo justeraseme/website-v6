@@ -1,7 +1,7 @@
 .tooltip {
-        background: #6c7086; /* use different stylizing because this isn't wintr's site */
-        color: #cdd6f4; /* use different stylizing because this isn't wintr's site */
-        /* rest is specified as per wintr's documentation and should NOT be changed */
+        background: #6c7086; /* use different stylizing because this isn't peach's site */
+        color: #cdd6f4; /* use different stylizing because this isn't peach's site */
+        /* rest is specified as per peach's documentation and should NOT be changed */
         position: fixed;
         padding: 6px 10px;
         border-radius: 6px;
