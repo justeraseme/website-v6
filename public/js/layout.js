@@ -151,7 +151,7 @@ function headerHTML() {
           <a href="https://neocities.org" target="_blank"><img src="./img/button/neocities.gif" alt="neocities. you're here!"></a>
           	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
             <a href="https://nomnomnami.com/" target="_blank"><img src="./img/button/nami.gif" alt="nomnomnami"></a>
-            <a href="https://peachleaf.neocities.org.com/" target="_blank"><img src="../img/button/peachleaf.gif"></a>
+            <a target="_blank" href="https://peachleaf.neocities.org/"><img src="../img/button/peachleaf.gif" alt="peachleaf's button"/></a>
           </marquee>
         </div>
 
