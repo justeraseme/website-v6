@@ -13,4 +13,4 @@
         
         el.setAttribute("datetime", date.toISOString());
       });
-// original script by wintrmoon. i don't know if they're uncomfortable with me still using this convenient thing...
+// original script by peachleaf
