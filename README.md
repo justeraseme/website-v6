@@ -6,7 +6,7 @@ Please read the [LICENSE](LICENSE) and [COPYING](COPYING.md) files for more info
 
 ## This website uses snippets of code written by...
 - [nomnomnami](https://nomnomnami.com/templates/) - Various templates ("Pastille", "Thyme")
-- [petrapixel](https://petrapixel.neocities.org/coding/layout-generator) - Layout generator (used for the homepage)
+- [petrapixel](https://petrapixel.neocities.org/coding/layout-generator) - Layout generator, last.fm iFrame
 
 ## Additional thanks to the following licensed projects for providing snippets...
 - [peachleaf's neocities page](https://github.com/wintrmoon/neocities) - Unix to Readable Timestamps, Tooltips Script (Licensed under MIT)
