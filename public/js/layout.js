@@ -89,6 +89,37 @@ function headerHTML() {
       <aside class="left-sidebar">
 
       <div class="sidebar-section">
+          <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=0&delimiter=by&underline=0" width="170" frameborder="0" title="Last.Fm Status"></iframe></p
+        </div>
+      </aside>
+
+      <div class="sidebar-section">
+          <div class="sidebar-title">Buttons</div>
+          <marquee>
+          <a href="https://neocities.org" target="_blank"><img src="./img/button/neocities.gif" alt="neocities. you're here!"></a>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+            <a href="https://nomnomnami.com/" target="_blank"><img src="./img/button/nami.gif" alt="nomnomnami"></a>
+            <a target="_blank" href="https://peachleaf.neocities.org/"><img src="../img/button/peachleaf.gif" alt="peachleaf's button"/></a>
+          </marquee>
+        </div>
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Take my button!</div>
+          <div class="site-button">
+          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a>
+        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
+          </div>
+        </div>
+	
+	  
+      <!-- =============================================== -->
+      <!-- RIGHT SIDEBAR -->
+      <!-- =============================================== -->
+
+      
+      <aside class="right-sidebar">
+
+      <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
           <p>12/15/25</p>
           <blockquote>
@@ -96,8 +127,19 @@ function headerHTML() {
             <p>* Now using peachleaf's tooltips script rather than title properties</p>
           </blockquote>
         </div>
-	  
-        <!--
+
+        <div class="sidebar-section">
+          <div class="sidebar-title">Webrings</div>
+          <p>:(</p>
+        </div>
+
+        <!-- =============================================== -->
+      <!-- JUNK -->
+      <!-- =============================================== -->
+
+      <!-- this is here for formatting purposes -->
+
+      <!--
         <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -127,49 +169,18 @@ function headerHTML() {
           </div>
         </div>
         -->
-      </aside>
-	
-	  
-      <!-- =============================================== -->
-      <!-- RIGHT SIDEBAR -->
-      <!-- =============================================== -->
 
-      
-      <aside class="right-sidebar">
+      <!--
 
       <div class="sidebar-section">
-          <div class="sidebar-title">Take my button!</div>
-          <div class="site-button">
-          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a>
-        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
-          </div>
-        </div>
-
-      <div class="sidebar-section">
-          <div class="sidebar-title">Buttons</div>
-          <marquee>
-          <a href="https://neocities.org" target="_blank"><img src="./img/button/neocities.gif" alt="neocities. you're here!"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-            <a href="https://nomnomnami.com/" target="_blank"><img src="./img/button/nami.gif" alt="nomnomnami"></a>
-            <a target="_blank" href="https://peachleaf.neocities.org/"><img src="../img/button/peachleaf.gif" alt="peachleaf's button"/></a>
-          </marquee>
-        </div>
-
-        <div class="sidebar-section">
-          <div class="sidebar-title">Webrings</div>
-          <p>:(</p>
-        </div>
-	  
-        <!--
-        <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <blockquote>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <p>Necessit atibus perferendis inventore tempore vel optio similique blanditiis quasi quam?</p>
           </blockquote>
         </div>
-        
-        <div class="sidebar-section">
+
+      <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <ul>
             <li>List</li>
@@ -178,22 +189,14 @@ function headerHTML() {
             <li>List</li>
           </ul>
         </div>
-        
-        <div class="sidebar-section">
-          <div class="sidebar-title">Section Title</div>
-          <marquee>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          </marquee>
-        </div>
-        
-        <div class="sidebar-section">
+
+      <div class="sidebar-section">
           <div class="sidebar-title">Section Title</div>
           <img class="full-width-image" src="https://picsum.photos/id/106/1000/400">
         </div>
-        -->
+
+      --> 
+
       </aside>
       `;
 }
