@@ -103,6 +103,14 @@ function headerHTML() {
         </div>
 
         <div class="sidebar-section">
+          <div class="sidebar-title">Take my button!</div>
+          <div class="site-button">
+          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a>
+        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
         <div class="sidebar-title">Listening to...</div>
           <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=1&delimiter=-&underline=1" width="170" frameborder="0" title="Last.Fm Status"></iframe>
         </div>
@@ -117,19 +125,14 @@ function headerHTML() {
 
       <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
-          <p>12/15/25</p>
+          <p>12/18/25</p>
           <blockquote>
-            <p>* There is now a dedicated page where you can download music I've made!</p>
-            <p>* Now using peachleaf's tooltips script rather than title properties</p>
+            <p>* As always, new posts available!</p>
+            <p>* Fixed tooltips in post tags not showing (the click filter ones)</p>
+            <p>* Added a last.fm listening widget!</p>
+            <p>* A new screen name has been adopted</p>
+            <p>* Sidebar re-arrangements</p>
           </blockquote>
-        </div>
-
-        <div class="sidebar-section">
-          <div class="sidebar-title">Take my button!</div>
-          <div class="site-button">
-          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a>
-        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
-          </div>
         </div>
 
         <!-- =============================================== -->
