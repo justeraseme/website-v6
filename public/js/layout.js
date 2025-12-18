@@ -140,8 +140,8 @@ function headerHTML() {
       <div class="sidebar-section">
           <div class="sidebar-title">Take my button!</div>
           <div class="site-button">
-          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TA - TANTO AURA!"></a>
-        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TA - TANTO AURA!"></a></textarea>
+          	<a href="https://tantoaura.neocities.org/" target="_blank"><img src="./img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a>
+        	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
           </div>
         </div>
 
