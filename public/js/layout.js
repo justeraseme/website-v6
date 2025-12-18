@@ -87,10 +87,6 @@ function headerHTML() {
       <!-- =============================================== -->
 
       <aside class="left-sidebar">
-
-      <div class="sidebar-section">
-          listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=1&delimiter=-&underline=1" width="170" frameborder="0" title="Last.Fm Status"></iframe>
-        </div>
         <div class="sidebar-section">
           <div class="sidebar-title">Webrings</div>
           <p>:(</p>
@@ -104,6 +100,11 @@ function headerHTML() {
             <a href="https://nomnomnami.com/" target="_blank"><img src="./img/button/nami.gif" alt="nomnomnami"></a>
             <a target="_blank" href="https://peachleaf.neocities.org/"><img src="../img/button/peachleaf.gif" alt="peachleaf's button"/></a>
           </marquee>
+        </div>
+
+        <div class="sidebar-section">
+        <div class="sidebar-title">Listening to...</div>
+          <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=1&delimiter=-&underline=1" width="170" frameborder="0" title="Last.Fm Status"></iframe>
         </div>
         </aside>
 	  
