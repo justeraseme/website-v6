@@ -89,9 +89,8 @@ function headerHTML() {
       <aside class="left-sidebar">
 
       <div class="sidebar-section">
-          <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=1&delimiter=-&underline=0" width="170" frameborder="0" title="Last.Fm Status"></iframe></p>
+          <p>listening to:<br> <iframe src="https://petrapixel.neocities.org/widgets/lastfm?center=1&marquee=0&font=Courier New&fontSize=16px&color=FCEAC5&username=sistermonroe&swapPositions=1&delimiter=-&underline=1" width="170" frameborder="0" title="Last.Fm Status"></iframe></p>
         </div>
-      </aside>
 
       <div class="sidebar-section">
           <div class="sidebar-title">Buttons</div>
@@ -110,7 +109,7 @@ function headerHTML() {
         	<textarea><a href="https://tantoaura.neocities.org/" target="_blank"><img src="https://tantoaura.neocities.org/img/button/button2.png" alt="TANTO AURA! (character & art nomnomnami)" title="TANTO AURA!"></a></textarea>
           </div>
         </div>
-	
+        </aside>
 	  
       <!-- =============================================== -->
       <!-- RIGHT SIDEBAR -->
