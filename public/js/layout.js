@@ -65,6 +65,7 @@ function headerHTML() {
 	          <ul>
 	            <li><a href="/">Home</a></li>
 	            <li><a href="./posts" data-tooltip="Like twitter, but less toxic.">Posts</a></li>
+              <li><a href="./blog/index.html" data-tooltip="A long form blog about various topics.">Blog</a></li>
               <li><a href="./music.html" data-tooltip="I work on music! Download a few before you go!">Music</a></li>
               <li><a href="./wiki/index.html" data-tooltip="Ever wanna learn?">Wikis</a></li>
               <li><a href="./archive" data-tooltip="Old versions... Very scary!">Archives</a></li>
@@ -125,13 +126,9 @@ function headerHTML() {
 
       <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
-          <p>12/18/25</p>
+          <p>12/25/25</p>
           <blockquote>
-            <p>* As always, new posts available!</p>
-            <p>* Fixed tooltips in post tags not showing (the click filter ones)</p>
-            <p>* Added a last.fm listening widget!</p>
-            <p>* A new screen name has been adopted</p>
-            <p>* Sidebar re-arrangements</p>
+            <p>* Brought the blog out of the dead! Sorry it was late... Happy late christmas, everyone!</p>
           </blockquote>
         </div>
 
