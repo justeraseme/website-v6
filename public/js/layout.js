@@ -126,9 +126,9 @@ function headerHTML() {
 
       <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
-          <p>12/25/25</p>
+          <p>01/01/26</p>
           <blockquote>
-            <p>* Brought the blog out of the dead! Sorry it was late... Happy late christmas, everyone!</p>
+            <p>* For the new years, let's talk about art. Up now on the blog!</p>
           </blockquote>
         </div>
 
