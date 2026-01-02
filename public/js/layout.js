@@ -126,9 +126,10 @@ function headerHTML() {
 
       <div class="sidebar-section">
           <div class="sidebar-title">Changelog</div>
-          <p>01/01/26</p>
+          <p>01/02/26</p>
           <blockquote>
-            <p>* For the new years, let's talk about art. Up now on the blog!</p>
+            <p>* New post now uses the correct date.</p>
+            <p>* Updated copyright year (this is how this works right)</p>
           </blockquote>
         </div>
 
